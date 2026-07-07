@@ -190,3 +190,44 @@ nav a {
     font-size: 32px;
   }
 }
+/* ===== Услуги ===== */
+
+.services {
+  padding: 90px 8%;
+  background: #222222;
+}
+
+.services .section-title h2 {
+  color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.service {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 22px;
+  padding: 26px 22px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 135px;
+}
+
+.service span {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.service:hover {
+  background: rgba(184,146,93,0.22);
+  transform: translateY(-5px);
+  transition: 0.3s;
+}

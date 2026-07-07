@@ -1,113 +1,36 @@
-/* Сброс */
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Крайстрой — от идеи до дома, готового к жизни</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <header>
+    <div class="logo">КРАЙСТРОЙ</div>
+    <nav>
+      <a href="#">Услуги</a>
+      <a href="#">Проекты</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f5f0;
-    color:#222;
-}
+  <section class="hero">
+    <div class="overlay">
+      <div class="subtitle">СТРОИТЕЛЬСТВО • ОТДЕЛКА • КОМПЛЕКТАЦИЯ</div>
+      <h1>Строим пространства, в которых хочется жить</h1>
+      <p>
+        От идеи до дома, готового к жизни. Проектирование, строительство,
+        отделка и подбор материалов под ключ.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn gold">Получить расчет</a>
+        <a href="#" class="btn white">Наши проекты</a>
+      </div>
+    </div>
+  </section>
 
-/* Шапка */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:rgba(255,255,255,.9);
-    backdrop-filter:blur(12px);
-    z-index:1000;
-}
-
-.logo{
-    font-size:32px;
-    font-weight:700;
-    letter-spacing:2px;
-}
-
-nav{
-    display:flex;
-    gap:35px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#222;
-    font-weight:600;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#B8925D;
-}
-
-/* Первый экран */
-
-.hero{
-    height:100vh;
-    background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80") center/cover;
-    display:flex;
-    align-items:center;
-    padding:0 8%;
-}
-
-.overlay{
-    max-width:650px;
-    color:white;
-}
-
-.subtitle{
-    color:#B8925D;
-    font-size:18px;
-    letter-spacing:6px;
-    margin-bottom:25px;
-}
-
-.overlay h1{
-    font-size:72px;
-    line-height:1.05;
-    margin-bottom:30px;
-}
-
-.overlay p{
-    font-size:24px;
-    line-height:1.6;
-    margin-bottom:45px;
-}
-
-.buttons{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:18px 38px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.gold{
-    background:#B8925D;
-    color:white;
-}
-
-.white{
-    border:2px solid white;
-    color:white;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
+</body>
+</html>

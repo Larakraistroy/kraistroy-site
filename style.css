@@ -180,3 +180,48 @@ nav a {
     color: #666;
     line-height: 1.7;
 }
+.advantages {
+  padding: 80px 8%;
+  background: #f8f5f0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title p {
+  color: #B8925D;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: #222;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}

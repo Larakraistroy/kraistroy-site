@@ -1,181 +1,234 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Крайстрой — строительство и комплектация под ключ</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Крайстрой.рф — свет, мебель, электрика, сантехника и декор</title>
+  <meta name="description" content="Крайстрой.рф — интернет-магазин света, мебели, электрики, сантехники, теплых полов, розеток, выключателей и декора с доставкой по России." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-mark">К</div>
+      <div>
+        <div class="logo-text">Крайстрой.рф</div>
+        <div class="logo-sub">свет · мебель · сантехника</div>
+      </div>
+    </div>
 
-<header class="header">
-  <div class="logo">КРАЙСТРОЙ</div>
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Поиск среди 100 000+ товаров: люстры, сантехника, розетки, теплые полы..." />
+      <button onclick="applyFilters()">Найти</button>
+    </div>
+
+    <div class="header-actions">
+      <a href="#designer">Дизайнерам</a>
+      <a href="#delivery">Доставка</a>
+      <button class="cart-button" onclick="toggleCart()">Корзина <span id="cartCount">0</span></button>
+    </div>
+  </header>
 
   <nav class="nav">
-    <a href="#about">О компании</a>
-    <a href="#services">Услуги</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contacts">Контакты</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#light">Свет</a>
+    <a href="#furniture">Мебель</a>
+    <a href="#electric">Электрика</a>
+    <a href="#plumbing">Сантехника</a>
+    <a href="#warm">Теплые полы</a>
+    <a href="#decor">Декор</a>
+    <a href="#integrations">Интеграции</a>
   </nav>
-</header>
 
-<main>
-
-  <section class="hero">
-    <div class="hero-content">
-      <p class="subtitle">СТРОИТЕЛЬСТВО • ОТДЕЛКА • КОМПЛЕКТАЦИЯ</p>
-
-      <h1>Создаем дома,<br>готовые к жизни</h1>
-
-      <p class="hero-text">
-        Проектирование, строительство, отделка и комплектация объектов под ключ.
-        Один подрядчик — полный контроль результата.
-      </p>
-
-      <div class="buttons">
-        <a href="#contacts" class="btn gold">Получить расчет</a>
-        <a href="#projects" class="btn transparent">Смотреть проекты</a>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">Более 100 000 товаров для ремонта и интерьера</div>
+        <h1>Большой интернет-магазин света, мебели, электрики и сантехники</h1>
+        <p>Крайстрой.рф помогает комплектовать квартиры, дома, офисы и коммерческие проекты: от люстр и розеток до мебели, теплых полов и декора.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#catalog">Перейти в каталог</a>
+          <a class="btn secondary" href="https://wa.me/79313421385?text=Здравствуйте!%20Хочу%20подбор%20товаров%20для%20проекта%20Крайстрой.рф" target="_blank">Подбор в WhatsApp</a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="stats">
-    <div class="stat">
-      <strong>15+</strong>
-      <span>лет опыта</span>
-    </div>
-
-    <div class="stat">
-      <strong>500+</strong>
-      <span>реализованных объектов</span>
-    </div>
-
-    <div class="stat">
-      <strong>1000+</strong>
-      <span>проверенных поставщиков</span>
-    </div>
-
-    <div class="stat">
-      <strong>100%</strong>
-      <span>контроль качества</span>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="section-title">
-      <p>О компании</p>
-      <h2>Крайстрой ведет проект от идеи до результата</h2>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <h3>Мы объединяем строительство, отделку и комплектацию в единую систему.</h3>
-        <p>
-          Клиенту не нужно искать десятки подрядчиков, поставщиков и специалистов.
-          Мы берем на себя организацию процесса, подбор материалов, контроль качества
-          и финальную подготовку объекта к жизни.
-        </p>
+      <div class="hero-panel">
+        <div class="panel-card big">
+          <span>Свет</span>
+          <strong>Люстры, бра, треки, подсветка</strong>
+        </div>
+        <div class="panel-grid">
+          <div class="panel-card"><span>Мебель</span><strong>Диваны, столы, кресла</strong></div>
+          <div class="panel-card"><span>Электрика</span><strong>Розетки, выключатели</strong></div>
+          <div class="panel-card"><span>Сантехника</span><strong>Смесители, раковины, душ</strong></div>
+          <div class="panel-card"><span>Теплые полы</span><strong>Кабель, маты, терморегуляторы</strong></div>
+          <div class="panel-card"><span>Декор</span><strong>Зеркала, аксессуары</strong></div>
+        </div>
       </div>
+    </section>
 
-      <div class="about-card">
-        <p>Для частных домов, квартир, бань, коммерческих и загородных объектов.</p>
+    <section class="stats">
+      <div><strong>100 000+</strong><span>товаров в каталоге</span></div>
+      <div><strong>24/7</strong><span>заявки через сайт</span></div>
+      <div><strong>Россия</strong><span>доставка по регионам</span></div>
+      <div><strong>B2B</strong><span>кабинет дизайнеров</span></div>
+    </section>
+
+    <section class="section categories">
+      <div class="section-head">
+        <h2>Каталог</h2>
+        <p>Основные направления магазина с возможностью масштабирования под любые бренды и поставщиков.</p>
       </div>
-    </div>
-  </section>
+      <div class="category-grid">
+        <article id="light" class="category-card"><h3>Свет</h3><p>Люстры, бра, споты, треки, уличный свет, лампы.</p><div class="chips"><span>Люстры</span><span>Бра</span><span>Треки</span></div></article>
+        <article id="furniture" class="category-card"><h3>Мебель</h3><p>Мебель для жилых помещений: гостиная, спальня, кухня, кабинет, прихожая.</p><div class="chips"><span>Диваны</span><span>Столы</span><span>Комоды</span></div></article>
+        <article id="electric" class="category-card"><h3>Электрика</h3><p>Кабель, автоматы, щиты, розетки, выключатели, умный дом.</p><div class="chips"><span>Кабель</span><span>Автоматика</span><span>Щиты</span></div></article>
+        <article id="plumbing" class="category-card featured"><h3>Сантехника</h3><p>Смесители, душевые системы, ванны, унитазы, инсталляции и мебель для ванной.</p><div class="chips"><span>Смесители</span><span>Раковины</span><span>Мебель для ванной</span></div></article>
+        <article id="warm" class="category-card"><h3>Теплые полы</h3><p>Нагревательные маты, кабель, пленка, термостаты и комплектующие.</p><div class="chips"><span>Маты</span><span>Кабель</span><span>Термостаты</span></div></article>
+        <article class="category-card"><h3>Розетки и выключатели</h3><p>Коллекции под разные стили интерьера.</p><div class="chips"><span>Белые</span><span>Графит</span><span>Стекло</span></div></article>
+        <article id="decor" class="category-card"><h3>Декор</h3><p>Зеркала, аксессуары, текстиль, ковры и финальные детали.</p><div class="chips"><span>Зеркала</span><span>Текстиль</span><span>Вазы</span></div></article>
+      </div>
+    </section>
 
-  <section class="advantages">
-    <div class="section-title">
-      <p>Преимущества</p>
-      <h2>Почему выбирают Крайстрой</h2>
-    </div>
+    <section class="section plumbing-structure" id="plumbingStructure">
+      <div class="section-head">
+        <h2>Сантехника и ванная комната</h2>
+        <p>Мебель для ванной логично размещена именно здесь: покупатель подбирает ее вместе с раковиной, смесителем, зеркалом, душевой системой и инсталляцией.</p>
+      </div>
+      <div class="subcategory-grid">
+        <div><h3>Смесители</h3><p>Для раковины, ванны, душа, кухни и биде.</p></div>
+        <div><h3>Раковины и мойки</h3><p>Накладные, встраиваемые, подвесные, кухонные мойки.</p></div>
+        <div><h3>Душевые системы</h3><p>Стойки, гарнитуры, верхний душ, душевые ограждения.</p></div>
+        <div><h3>Ванны и унитазы</h3><p>Ванны, унитазы, биде, инсталляции и комплектующие.</p></div>
+        <div class="accent"><h3>Мебель для ванной</h3><p>Тумбы с раковиной, подвесные тумбы, пеналы, зеркальные шкафы и комплекты.</p></div>
+        <div><h3>Инженерная сантехника</h3><p>Сифоны, трапы, коллекторы, трубы, фитинги и полотенцесушители.</p></div>
+      </div>
+    </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Полный цикл</h3>
-        <p>Берем проект от идеи до дома, готового к жизни.</p>
+    <section class="section catalog-section" id="catalog">
+      <div class="section-head">
+        <h2>Товары</h2>
+        <p>Демо-каталог. В реальном проекте сюда подключаются InSales, 1С и API поставщиков.</p>
       </div>
 
-      <div class="card">
-        <h3>Комплектация</h3>
-        <p>Подбираем материалы, освещение, двери, мебель и детали интерьера.</p>
+      <div class="catalog-layout">
+        <aside class="filters">
+          <h3>Фильтры</h3>
+          <label>Категория</label>
+          <select id="categoryFilter" onchange="applyFilters()">
+            <option value="all">Все категории</option>
+            <option value="Свет">Свет</option>
+            <option value="Мебель">Мебель</option>
+            <option value="Электрика">Электрика</option>
+            <option value="Сантехника">Сантехника</option>
+            <option value="Теплые полы">Теплые полы</option>
+            <option value="Розетки и выключатели">Розетки и выключатели</option>
+            <option value="Декор">Декор</option>
+          </select>
+
+          <label>Подкатегория</label>
+          <select id="subcategoryFilter" onchange="applyFilters()">
+            <option value="all">Все подкатегории</option>
+          </select>
+
+          <label>Бренд</label>
+          <select id="brandFilter" onchange="applyFilters()">
+            <option value="all">Все бренды</option>
+          </select>
+
+          <label>Цена до, ₽</label>
+          <input id="priceFilter" type="range" min="1000" max="250000" value="250000" oninput="priceValue.textContent = Number(this.value).toLocaleString('ru-RU'); applyFilters()" />
+          <div class="price-range">до <span id="priceValue">250 000</span> ₽</div>
+
+          <label class="check"><input id="inStockFilter" type="checkbox" onchange="applyFilters()" /> Только в наличии</label>
+          <button class="btn reset" onclick="resetFilters()">Сбросить</button>
+        </aside>
+
+        <div>
+          <div class="catalog-toolbar">
+            <span id="resultCount"></span>
+            <select id="sortFilter" onchange="applyFilters()">
+              <option value="popular">По популярности</option>
+              <option value="priceAsc">Сначала дешевле</option>
+              <option value="priceDesc">Сначала дороже</option>
+            </select>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Один ответственный</h3>
-        <p>Клиенту не нужно искать десятки подрядчиков — мы ведем процесс целиком.</p>
+    <section class="section designer" id="designer">
+      <div>
+        <div class="badge">Личный кабинет</div>
+        <h2>Дизайнерам и архитекторам</h2>
+        <p>Закрытые цены, проектные скидки, спецификации, подбор аналогов, сохранение подборок и быстрые счета для клиентов.</p>
+        <ul>
+          <li>личные условия и B2B-прайсы;</li>
+          <li>загрузка спецификации из Excel;</li>
+          <li>коммерческое предложение в PDF;</li>
+          <li>история проектов и повтор заказов.</li>
+        </ul>
       </div>
-    </div>
-  </section>
+      <form class="designer-form" onsubmit="sendDesignerRequest(event)">
+        <h3>Получить доступ</h3>
+        <input id="designerName" placeholder="Ваше имя" required />
+        <input id="designerPhone" placeholder="Телефон" required />
+        <select id="designerRole">
+          <option>Дизайнер интерьера</option>
+          <option>Архитектор</option>
+          <option>Комплектатор</option>
+          <option>Строительная компания</option>
+        </select>
+        <button class="btn primary" type="submit">Отправить заявку</button>
+      </form>
+    </section>
 
-  <section class="services" id="services">
-    <div class="section-title dark">
-      <p>Что мы делаем</p>
-      <h2>Полный цикл работ</h2>
-    </div>
-
-    <div class="services-grid">
-      <div class="service">🏡<span>Строительство домов</span></div>
-      <div class="service">🛁<span>Бани</span></div>
-      <div class="service">🛠<span>Ремонт и отделка</span></div>
-      <div class="service">🚿<span>Сантехника</span></div>
-      <div class="service">🔥<span>Тёплый пол</span></div>
-      <div class="service">⚡<span>Электрика</span></div>
-      <div class="service">💡<span>Освещение</span></div>
-      <div class="service">🚪<span>Двери</span></div>
-      <div class="service">🪵<span>Напольные покрытия</span></div>
-      <div class="service">🛋<span>Мебель</span></div>
-      <div class="service">🍽<span>Кухни</span></div>
-      <div class="service">📐<span>Дизайн интерьера</span></div>
-      <div class="service">📦<span>Комплектация объектов</span></div>
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <div class="section-title">
-      <p>Проекты</p>
-      <h2>Объекты, которые выглядят дорого и служат долго</h2>
-    </div>
-
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-image image-one"></div>
-        <h3>Современный дом</h3>
-        <p>Строительство, отделка и комплектация под ключ.</p>
+    <section class="section integrations" id="integrations">
+      <div class="section-head">
+        <h2>Интеграции для масштабного магазина</h2>
+        <p>Архитектура рассчитана на большой каталог, автоматизацию цен, остатков, заказов и доставок.</p>
       </div>
-
-      <div class="project-card">
-        <div class="project-image image-two"></div>
-        <h3>Загородная баня</h3>
-        <p>Полный цикл работ: от основания до интерьера.</p>
+      <div class="integration-grid">
+        <div><h3>InSales</h3><p>Каталог, витрина, заказы, импорт товаров, обновление цен и остатков.</p></div>
+        <div><h3>1С</h3><p>Склад, счета, контрагенты, статусы заказов, обмен документами.</p></div>
+        <div><h3>API поставщиков</h3><p>Автообновление ассортимента, изображений, характеристик и наличия.</p></div>
+        <div><h3>Доставка</h3><p>СДЭК, Деловые линии, ПЭК, Boxberry, курьеры и самовывоз.</p></div>
+        <div><h3>Оплата</h3><p>Онлайн-оплата, счета для юрлиц, рассрочка, оплата по ссылке.</p></div>
+        <div><h3>SEO и аналитика</h3><p>ЧПУ, микроразметка, sitemap, Яндекс.Метрика, e-commerce события.</p></div>
       </div>
+    </section>
 
-      <div class="project-card">
-        <div class="project-image image-three"></div>
-        <h3>Интерьер для жизни</h3>
-        <p>Материалы, освещение, мебель и детали пространства.</p>
+    <section class="section delivery" id="delivery">
+      <h2>Оплата и доставка по России</h2>
+      <div class="delivery-grid">
+        <div><strong>Онлайн-оплата</strong><span>Картой, по счету, по ссылке или для юридических лиц.</span></div>
+        <div><strong>Доставка</strong><span>По Санкт-Петербургу, Москве и регионам России.</span></div>
+        <div><strong>Комплектация</strong><span>Собираем заказ по проекту и контролируем поставки.</span></div>
       </div>
+    </section>
+  </main>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head">
+      <h3>Корзина</h3>
+      <button onclick="toggleCart()">×</button>
     </div>
-  </section>
+    <div id="cartItems" class="cart-items">Корзина пуста</div>
+    <div class="cart-total">Итого: <strong id="cartTotal">0 ₽</strong></div>
+    <a id="checkoutLink" class="whatsapp" href="https://wa.me/79313421385" target="_blank">Оформить в WhatsApp</a>
+  </aside>
 
-  <section class="contacts" id="contacts">
-    <div class="contacts-content">
-      <p class="subtitle">СВЯЗАТЬСЯ С НАМИ</p>
-      <h2>Рассчитаем ваш проект и предложим лучшее решение</h2>
-      <p>
-        Оставьте заявку, и мы обсудим объект, задачи, бюджет и сроки.
-      </p>
-      <a href="tel:+79999999999" class="btn gold">Позвонить</a>
+  <footer>
+    <div>
+      <div class="logo-text">Крайстрой.рф</div>
+      <p>Свет, мебель, электрика, сантехника, теплые полы, розетки, выключатели и декор.</p>
     </div>
-  </section>
+    <div>
+      <p>WhatsApp: +7 931 342 13 85</p>
+      <p>Доставка по России · B2B · комплектация проектов</p>
+    </div>
+  </footer>
 
-</main>
-
-<footer>
-  <p>© Крайстрой. Строительство, отделка и комплектация под ключ.</p>
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="app.js"></script>
 </body>
 </html>

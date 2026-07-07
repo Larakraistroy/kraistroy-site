@@ -284,3 +284,30 @@ nav a {
     font-size: 18px;
   }
 }
+.stats {
+  padding: 55px 8% !important;
+  background: #ffffff !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) !important;
+  gap: 22px !important;
+}
+
+.stat {
+  text-align: center !important;
+  padding: 28px 18px !important;
+  border-radius: 22px !important;
+  background: #f8f5f0 !important;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.06) !important;
+}
+
+.stat h3 {
+  font-size: 42px !important;
+  color: #B8925D !important;
+  margin-bottom: 8px !important;
+}
+
+.stat p {
+  font-size: 17px !important;
+  color: #222222 !important;
+  font-weight: 600 !important;
+}

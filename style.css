@@ -1,111 +1,113 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Сброс */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f8f5f0;
-  color: #222222;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f5f0;
+    color:#222;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 8%;
-  background: rgba(255,255,255,.92);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  backdrop-filter: blur(12px);
+/* Шапка */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(12px);
+    z-index:1000;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.logo{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
-.nav a {
-  color: #222;
-  text-decoration: none;
-  margin-left: 24px;
-  font-weight: 500;
+nav{
+    display:flex;
+    gap:35px;
 }
 
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 120px 8%;
-  background:
-    linear-gradient(rgba(34,34,34,.55), rgba(34,34,34,.55)),
-    url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:.3s;
 }
 
-.hero-content {
-  max-width: 700px;
+nav a:hover{
+    color:#B8925D;
 }
 
-.label {
-  color: #B8925D;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 18px;
+/* Первый экран */
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80") center/cover;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
 }
 
-.hero h1 {
-  color: white;
-  font-size: 56px;
-  line-height: 1.1;
-  margin-bottom: 24px;
+.overlay{
+    max-width:650px;
+    color:white;
 }
 
-.subtitle {
-  color: rgba(255,255,255,.9);
-  font-size: 20px;
-  line-height: 1.7;
-  margin-bottom: 40px;
+.subtitle{
+    color:#B8925D;
+    font-size:18px;
+    letter-spacing:6px;
+    margin-bottom:25px;
 }
 
-.buttons {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
+.overlay h1{
+    font-size:72px;
+    line-height:1.05;
+    margin-bottom:30px;
 }
 
-.btn {
-  padding: 16px 30px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
+.overlay p{
+    font-size:24px;
+    line-height:1.6;
+    margin-bottom:45px;
 }
 
-.primary {
-  background: #B8925D;
-  color: white;
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.secondary {
-  border: 2px solid white;
-  color: white;
+.btn{
+    padding:18px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
+.gold{
+    background:#B8925D;
+    color:white;
+}
 
-  .hero h1 {
-    font-size: 38px;
-  }
+.white{
+    border:2px solid white;
+    color:white;
+}
 
-  .subtitle {
-    font-size: 18px;
-  }
+.btn:hover{
+    transform:translateY(-3px);
 }

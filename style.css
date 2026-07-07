@@ -207,17 +207,29 @@ nav a {
   gap: 18px;
 }
 
-.service {
-  background: rgba(255,255,255,0.08);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 22px;
-  padding: 26px 22px;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  min-height: 135px;
+  .service {
+    background: rgba(255,255,255,0.08);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 90px;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.service span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    background: rgba(184,146,93,.22);
+}
 }
 
 .service span {

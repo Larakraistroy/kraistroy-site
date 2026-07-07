@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Крайстрой</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Крайстрой</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">КРАЙСТРОЙ</div>
+  <div class="logo">КРАЙСТРОЙ</div>
 
-    <nav>
-        <a href="#">Услуги</a>
-        <a href="#">Проекты</a>
-        <a href="#">Контакты</a>
-    </nav>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#">Проекты</a>
+    <a href="#">Контакты</a>
+  </nav>
 </header>
 
 <section class="hero">
+  <div class="overlay">
+    <div class="subtitle">СТРОИТЕЛЬСТВО • ОТДЕЛКА • КОМПЛЕКТАЦИЯ</div>
 
-    <div class="overlay">
+    <h1>Строим пространства,<br>в которых хочется жить</h1>
 
-        <div class="subtitle">
-            СТРОИТЕЛЬСТВО • ОТДЕЛКА • КОМПЛЕКТАЦИЯ
-        </div>
+    <p>
+      От идеи до дома, готового к жизни.<br>
+      Проектирование, строительство, отделка<br>
+      и комплектация объектов под ключ.
+    </p>
 
-        <h1>
-            Строим пространства,<br>
-            в которых хочется жить
-        </h1>
-
-        <p>
-            От идеи до дома, готового к жизни.<br>
-            Проектирование, строительство, отделка<br>
-            и комплектация объектов под ключ.
-        </p>
-
-        <div class="buttons">
-            <a href="#" class="btn gold">Получить расчет</a>
-            <a href="#" class="btn white">Наши проекты</a>
-        </div>
-
+    <div class="buttons">
+      <a href="#" class="btn gold">Получить расчет</a>
+      <a href="#" class="btn white">Наши проекты</a>
     </div>
-
+  </div>
 </section>
+
 <section class="advantages">
   <div class="section-title">
     <p>Преимущества</p>
@@ -69,86 +60,32 @@
       <p>Клиенту не нужно искать десятки подрядчиков — мы ведем процесс целиком.</p>
     </div>
   </div>
-</section><section class="services">
+</section>
 
+<section class="services" id="services">
   <div class="section-title">
     <p>Что мы делаем</p>
     <h2>Полный цикл работ</h2>
   </div>
 
   <div class="services-grid">
-
     <div class="service">🏡<span>Строительство домов</span></div>
-
     <div class="service">🛁<span>Бани</span></div>
-
     <div class="service">🛠<span>Ремонт и отделка</span></div>
-
     <div class="service">🚿<span>Сантехника</span></div>
-
-    <div class="service">🔥<span>Теплый пол</span></div>
-
+    <div class="service">🔥<span>Тёплый пол</span></div>
     <div class="service">⚡<span>Электрика</span></div>
-
     <div class="service">💡<span>Освещение</span></div>
-
     <div class="service">🚪<span>Двери</span></div>
-
     <div class="service">🪵<span>Напольные покрытия</span></div>
-
     <div class="service">🛋<span>Мебель</span></div>
-
     <div class="service">🍽<span>Кухни</span></div>
-
     <div class="service">📐<span>Дизайн интерьера</span></div>
-
     <div class="service">📦<span>Комплектация объектов</span></div>
-
   </div>
-
 </section>
+
 <script src="script.js"></script>
 
 </body>
 </html>
-/* ===== Услуги ===== */
-
-.services {
-  padding: 90px 8%;
-  background: #222222;
-}
-
-.services .section-title h2 {
-  color: white;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 18px;
-}
-
-.service {
-  background: rgba(255,255,255,0.08);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 22px;
-  padding: 26px 22px;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  min-height: 135px;
-}
-
-.service span {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.service:hover {
-  background: rgba(184,146,93,0.22);
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
